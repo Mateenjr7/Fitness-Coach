@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* General styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    h2 {
+      color: #2b7a78;
+    }
+
+    p.lead {
+      color: #505050;
+    }
+
+    ul.lead li {
+      margin-bottom: 10px;
+    }
+
+    /* Navbar styles */
+    
+    .navbar {
+    background-color: #365E32 !important;
+    
+  }
+  
+  .navbar-brand,
+  .nav-link {
+    color: #fff !important;
+  }
+  .navbar-brand span {
+    color: #fff;
+  }
+  .navbar-brand i {
+    color: #fff;
+  }
+  .nav-link:hover {
+    color: #d9d9d9 !important;
+  }
+
+    /* Adding margin to the content below the navbar */
+    .hero {
+        margin-top: 56px; /* Adjust this value based on your navbar height */
+    }
+    /* Carousel styles */
+    .carousel {
+    height: 100vh;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    position: relative;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* filter: blur(2px); */
+    
+  }
+
+  .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .carousel-caption h5 {
+    color: #40A578;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .carousel-caption p {
+    color: #ddd;
+    font-size: 1.2rem;
+  }
+
+    /* Section styles */
+    section {
+      padding: 60px 0;
+    }
+
+    .embed-responsive {
+      margin-bottom: 30px;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #2b7a78;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .footer a {
+      color: #fff;
+    }
+
+    .footer a:hover {
+      color: #ffd700;
+    }
+
+    .footer .footer-heading {
+      color: #ffd700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Health<span>coach<i class="fa fa-leaf"></i></span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#overview" class="nav-link">Nutrition Overview</a></li>
+          <li class="nav-item"><a href="#daily-requirements" class="nav-link">Daily Requirements</a></li>
+          <li class="nav-item"><a href="#nutrient-sources" class="nav-link">Sources</a></li>
+          <li class="nav-item"><a href="#recipes" class="nav-link">Healthy Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/nut3.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Nutrition Details</h5>
+          <p>Your guide to a healthy and balanced diet</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/nut.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Healthy Eating</h5>
+          <p>Discover the benefits of a nutritious diet</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/nut5.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fitness and Nutrition</h5>
+          <p>Achieve your fitness goals with proper nutrition</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+
+    <!-- Section: Overview -->
+    <section id="overview">
+      <div class="container">
+        <h2 class="mb-4">Nutrition Overview</h2>
+        <p class="lead">Nutrition plays a crucial role in maintaining overall health and well-being. A balanced diet provides essential nutrients that are vital for various bodily functions, including growth, repair, and energy production.</p>
+        <p class="lead">Key aspects of nutrition include:</p>
+        <ul class="lead">
+          <li><strong>Macronutrients:</strong> Carbohydrates, proteins, and fats are macronutrients that provide energy and support bodily functions.</li>
+          <li><strong>Micronutrients:</strong> Vitamins and minerals are micronutrients that are essential for metabolism, immune function, and overall health.</li>
+          <li><strong>Water:</strong> Hydration is critical for regulating body temperature, transporting nutrients, and maintaining bodily functions.</li>
+        </ul>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Fz4aoEKepoU?si=n--lmbx-oMCqdkD6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="lead mt-4">Understanding nutritional needs and making informed food choices can help prevent chronic diseases, support optimal physical and mental performance, and enhance overall quality of life.</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Section: Daily Requirements -->
+    <section id="daily-requirements">
+      <div class="container">
+        <h2 class="mb-4">Daily Nutritional Requirements</h2>
+        <p class="lead">Understanding daily nutritional requirements is essential for maintaining optimal health and well-being. A balanced diet provides the necessary nutrients for bodily functions, growth, and energy production.</p>
+        <p class="lead">Key components of daily nutritional requirements include:</p>
+        <ul class="lead">
+          <li><strong>Calories:</strong> The amount of energy needed varies based on factors like age, gender, activity level, and metabolism.</li>
+          <li><strong>Macronutrients:</strong> Carbohydrates, proteins, and fats are essential for energy, muscle repair, and overall health.</li>
+          <li><strong>Micronutrients:</strong> Vitamins and minerals are vital for various bodily functions, including immune support and bone health.</li>
+          <li><strong>Water:</strong> Staying hydrated is crucial for digestion, circulation, and temperature regulation.</li>
+        </ul>
+        <p class="lead">Consulting with a registered dietitian or nutritionist can help tailor daily nutritional requirements to individual needs and goals.</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Section: Nutrient Sources -->
+    <section id="nutrient-sources">
+      <div class="container">
+        <h2 class="mb-4">Sources of Essential Nutrients</h2>
+        <p class="lead">Obtaining essential nutrients from a variety of food sources ensures a balanced diet. Different foods provide different nutrients, so it's important to consume a diverse range of foods.</p>
+        <p class="lead">Key sources of essential nutrients include:</p>
+        <ul class="lead">
+          <li><strong>Fruits and Vegetables:</strong> Rich in vitamins, minerals, fiber, and antioxidants.</li>
+          <li><strong>Whole Grains:</strong> Provide carbohydrates, fiber, and essential nutrients.</li>
+          <li><strong>Lean Proteins:</strong> Sources include poultry, fish, beans, and legumes.</li>
+          <li><strong>Dairy:</strong> Provides calcium, vitamin D, and other essential nutrients.</li>
+          <li><strong>Healthy Fats:</strong> Sources include avocados, nuts, seeds, and olive oil.</li>
+        </ul>
+        <p class="lead">Incorporating these food sources into daily meals can help meet nutritional needs and support overall health.</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Section: Recipes -->
+    <section id="recipes">
+      <div class="container">
+        <h2 class="mb-4">Healthy Recipes</h2>
+        <p class="lead">Discover a variety of healthy recipes that are not only delicious but also packed with essential nutrients. Whether you're looking for breakfast, lunch, dinner, or snacks, there's something for everyone.</p>
+        <ul class="lead">
+          <li><strong>Avocado Toast:</strong> Whole grain toast topped with mashed avocado, a sprinkle of salt, and a dash of red pepper flakes.</li>
+          <li><strong>Quinoa Salad:</strong> Quinoa mixed with cherry tomatoes, cucumbers, feta cheese, and a lemon vinaigrette.</li>
+          <li><strong>Grilled Chicken:</strong> Marinated chicken breasts grilled to perfection, served with a side of steamed vegetables.</li>
+          <li><strong>Smoothie Bowl:</strong> Blend your favorite fruits with a splash of almond milk, topped with granola and fresh berries.</li>
+        </ul>
+        <p class="lead">Explore more recipes online and experiment with different ingredients to find what works best for your taste and nutritional needs.</p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="footer-heading">About Us</h5>
+            <p>Healthcoach is dedicated to providing reliable health and nutrition information to help you make informed decisions about your well-being.</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-heading">Contact Us</h5>
+            <ul>
+              <li><a href="mailto:info@healthcoach.com">info@healthcoach.com</a></li>
+              <li><a href="tel:+123456789">+1 (234) 567-89</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-heading">Follow Us</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 3000,
+        pause: 'hover'
+      });
+    });
+  </script>
+</body>
+
+</html>

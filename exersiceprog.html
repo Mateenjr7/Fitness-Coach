@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Coach</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <style>
+    /* Background styles */
+    .form-group d-flex {
+      margin-top: 10px;
+    }
+
+    body {
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      background-color: azure;
+    }
+
+
+    /* Hero section styles */
+    .hero {
+      height: 80vh;
+      /* object-fit: cover; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* color: #fff; */
+      background-repeat: no-repeat;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/mainexersice.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Adjust the blur intensity here */
+    z-index: 1; /* Ensure blur effect is behind the overlay */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    z-index: 2; /* Ensure overlay is on top of the blur effect */
+}
+
+.container,
+.text-center {
+    position: relative;
+    z-index: 3; /* Ensure content is on top of the overlay */
+}
+
+.text-center h1, 
+.text-center p {
+    color: #fff; /* Make the text white for better contrast */
+    font-weight: bold; /* Make the text bolder */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+    
+
+    .btn-success {
+      background-color: #28a745; /* Set a color for the success button */
+      border-color: #28a745; /* Set border color for the success button */
+      color: #681b1b; /* Set text color for the success button */
+      margin-left: 19rem;
+  }
+  
+  .btn-success:hover {
+      background-color: #218838; /* Change background color on hover */
+      border-color: #1e7e34; /* Change border color on hover */
+      
+  }
+
+  .text h1, .text p {
+    color: #cbc96f;
+    font-weight: bold;
+    
+  }
+
+   #ftco-navbar {
+        background-color: rgba(144, 238, 144, 0.9); /* Pale greenish background with slight transparency */
+        z-index: 1000;
+    }
+
+    /* Adding margin to the content below the navbar */
+    .hero {
+        margin-top: 56px; /* Adjust this value based on your navbar height */
+    }
+
+}
+
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Health<span>coach<i class="fa fa-leaf"></i></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#beginner" class="nav-link">Beginner</a></li>
+                <li class="nav-item"><a href="#intermediate" class="nav-link">Intermediate</a></li>
+                <li class="nav-item"><a href="#advance" class="nav-link">Advanced</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+<br>
+
+<div class="hero" style="position: relative; height: 100vh;">
+  <div class="hero-background" style="
+      background-image: url('images/mainexersice.jpg');
+      filter: blur(1px);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;">
+  </div>
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="text-center text-white">
+          <h1 style="color: #FDA403;">Welcome to Health Coach</h1>
+          <p style="color: #EABE6C;">Achieve your fitness goals with our expert-guided exercises.</p>
+          <a href="#beginner" class="btn btn-success">Get Started</a>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="container my-5 pt-5">
+
+  <h2 id="beginner">Beginner Level</h2><br>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Bodyweight Squats</h3>
+      <p>Bodyweight squats are a great exercise for beginners to build lower body strength and improve mobility.</p>
+      <a href="https://www.youtube.com/watch?v=l83R5PblSMA" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l83R5PblSMA?si=AJZfzFKcyF3gJiAj"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Lunges</h3>
+      <p>Lunges are a great exercise for beginners to work on balance, coordination, and lower body strength.</p>
+      <a href="https://www.youtube.com/watch?v=UpyDdQjBTa0" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UpyDdQjBTa0"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Planks</h3>
+      <p>Planks are a great exercise for beginners to work on core strength and stability.</p>
+      <a href="https://www.youtube.com/watch?v=pSHjTRCQxIw" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pSHjTRCQxIw"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Push-ups</h3>
+      <p>Push-ups are a classic exercise that work the chest, shoulders, and triceps.</p>
+      <a href="https://www.youtube.com/watch?v=IODxDxX7oi4" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IODxDxX7oi4"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Bird Dog</h3>
+      <p>The bird dog exercise targets the core and improves balance and stability.</p>
+      <a href="https://www.youtube.com/watch?v=wiFNA3sqjCA" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wiFNA3sqjCA"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="intermediate">Intermediate Level</h2><br>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Push-up Variations</h3>
+      <p>Explore different push-up variations to challenge your upper body strength.</p>
+      <a href="https://www.youtube.com/watch?v=Eh00_rniF8E" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Eh00_rniF8E"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Dumbbell Rows</h3>
+      <p>Dumbbell rows target the back muscles and improve upper body strength.</p>
+      <a href="https://www.youtube.com/watch?v=-koP10y1qZI" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-koP10y1qZI?si=xr2CwrwzWh1Wh8J9"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Burpees</h3>
+      <p>Burpees are a full-body exercise that improve cardiovascular fitness and strength.</p>
+      <a href="https://www.youtube.com/watch?v=dZgVxmf6jkA" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dZgVxmf6jkA"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Step-ups</h3>
+      <p>Step-ups are a great exercise to improve lower body strength and balance.</p>
+      <a href="https://www.youtube.com/watch?v=aclHkVaku9U" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aclHkVaku9U"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Lateral Lunges</h3>
+      <p>Lateral lunges target the inner and outer thighs, and improve lateral movement.</p>
+      <a href="https://www.youtube.com/watch?v=gwWv7aPcD88" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gwWv7aPcD88?si=klfajHgUNyRBuLJ3"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 id="advance">Advance Level</h2><br>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Pull-ups</h3>
+      <p>Pull-ups are an advanced exercise that target the back and biceps.</p>
+      <a href="https://www.youtube.com/watch?v=eGo4IYlbE5g" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eGo4IYlbE5g"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Box Jumps</h3>
+      <p>Box jumps are an explosive exercise that improve power and plyometric ability.</p>
+      <a href="https://www.youtube.com/watch?v=52r_Ul5k03g" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/52r_Ul5k03g"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Pistol Squats</h3>
+      <p>Pistol squats are a challenging single-leg squat variation that require balance and strength.</p>
+      <a href="https://www.youtube.com/watch?v=qDcniqddTeE" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qDcniqddTeE"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Muscle-ups</h3>
+      <p>Muscle-ups are an advanced calisthenics exercise that combine a pull-up and a dip.</p>
+      <a href="https://www.youtube.com/watch?v=FaAhgBB9DtU" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FaAhgBB9DtU?si=xyDcIuPyhMbJ_sKH"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <h3>Handstand Push-ups</h3>
+      <p>Handstand push-ups are an extremely challenging exercise that require immense upper body strength and
+        balance.</p>
+      <a href="https://www.youtube.com/watch?v=qbRbM6d5ddM" class="btn btn-primary" target="_blank">Watch Video</a>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qbRbM6d5ddM?si=r3pjWhtzUMgcKN9Z"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-6">
+            <div class="subscribe mb-5">
+              <form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-lg-5">
+            <div class="row">
+              <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+                <h2 class="footer-heading"><a href="#" class="logo">Health<span>care</span></a></h2>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <div class="row">
+              <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block">Balance Body</a></li>
+                  <li><a href="#" class="py-1 d-block">Physical Activity</a></li>
+                  <li><a href="#" class="py-1 d-block">Fitness Program</a></li>
+                  <li><a href="#" class="py-1 d-block">Healthy Food</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">About</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block">Staff</a></li>
+                  <li><a href="#" class="py-1 d-block">Team</a></li>
+                  <li><a href="#" class="py-1 d-block">Careers</a></li>
+                  <li><a href="#" class="py-1 d-block">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Resources</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block">Security</a></li>
+                  <li><a href="#" class="py-1 d-block">Global</a></li>
+                  <li><a href="#" class="py-1 d-block">Charts</a></li>
+                  <li><a href="#" class="py-1 d-block">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Social</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-1 d-block">Facebook</a></li>
+                  <li><a href="#" class="py-1 d-block">Twitter</a></li>
+                  <li><a href="#" class="py-1 d-block">Instagram</a></li>
+                  <li><a href="#" class="py-1 d-block">Google</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-8">
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+              <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                target="_blank">Colorlib.com</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 text-md-right">
+            <p class="mb-0 list-unstyled">
+              <a class="mr-md-3" href="#">Terms</a>
+              <a class="mr-md-3" href="#">Privacy</a>
+              <a class="mr-md-3" href="#">Compliances</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
