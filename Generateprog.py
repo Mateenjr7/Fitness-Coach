@@ -1,4 +1,14 @@
 import os
+import subprocess
+import sys
+
+try:
+    import google.generativeai as genai
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "google-generativeai"])
+    import google.generativeai as genai
+
+import os
 PORT = int(os.environ.get('PORT', 8501))
 
 import os
@@ -6,10 +16,16 @@ import streamlit as st
 from agno.agent import Agent
 from agno.models.google import Gemini
 from agno.tools.duckduckgo import DuckDuckGoTools
+from dotenv import load_dotenv
 
-# API Key Setup
-GOOGLE_API_KEY = "AIzaSyCr35hxFrpVsbNWgqOwU6PwmkpwLmO2dJA"
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+# Load environment variables from .env.local file
+load_dotenv('.env.local')
+
+# Get API key from environment
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+if not GOOGLE_API_KEY:
+    st.error("Google API key not found in .env.local file")
+    st.stop()
 
 # Dietary Planner Agent
 dietary_planner = Agent(
