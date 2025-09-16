@@ -1,142 +1,83 @@
-<h1 align="center">
-    <img alt="project" title="#About" src="./images/healthcoach.png" />
-</h1>
+<h1 align="center"> <img alt="project" title="#About" src="./images/fitnesscoach.png" /> </h1> <h1 align="center"> <a href="https://fitnesscoachz.netlify.app">Fitness Coach</a> </h1> <h3 align="center"></h3> <p align="center"> <img alt="Stars" src="https://img.shields.io/github/stars/Mateenjr7/Fitness-Coach?style=social"> <a href="https://github.com/Mateenjr7/Fitness-Coach"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Mateenjr7/Fitness-Coach"> </a> <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> <a href="https://github.com/Mateenjr7/"> <img alt="made by Mateenjr7" src="https://img.shields.io/badge/made%20by-Mateenjr7-ff69b4"> </a> </p> <h4 align="center"> Status: Finished </h4> <p align="center"> <a href="#about">About</a> • <a href="#features">Features</a> • <a href="#how-it-works">How it works</a> • <a href="#tech-stack">Tech Stack</a> • <a href="#author">Author</a> • <a href="#license">License</a> </p>
+About
 
-<h1 align="center">
-  <a href="https://healthcoachz.netlify.app"> Health Coach</a>
-</h1>
+Fitness Coach is a web application designed to assist users in achieving their health and fitness goals. It offers personalized exercise routines, diet plans, and educational resources to support a healthier lifestyle. The application provides:
 
-<h3 align="center"></h3>
+A customized exercise program section tailored to user preferences.
 
-<p align="center">
+A diet plan section offering meal suggestions to maintain or improve fitness.
 
-  <img alt="Stars" src="https://img.shields.io/github/stars/Mominuddin07/Health-Coach?style=social">
+A nutrition information section providing tips and educational content.
 
-  <a href="https://github.com/Mominuddin07/Health-Coach">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Mominuddin07/Health-Coach">
-  </a>
+A responsive and intuitive interface for easy access across devices.
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+Features
 
-  <a href="https://github.com/Mominuddin07/">
-    <img alt="made by Mohammed Mominuddin" src="https://img.shields.io/badge/made%20by-Mohammed%20Mominuddin-ff69b4">
-  </a>
-</p>
+ Personalized Exercise Plans for different fitness goals
 
+ Diet Plans with meal suggestions based on user needs
 
-<h4 align="center"> 
-	 Status: Finished
-</h4>
+ Nutrition Guidance for a healthier lifestyle
 
-<p align="center">
- <a href="#about">About</a> •
- <a href="#features">Features</a> •
- <a href="#how-it-works">How it works</a> • 
- <a href="#tech-stack">Tech Stack</a> •  
- <a href="#author">Author</a> • 
- <a href="#user-content-license">License</a>
-</p>
+ Mobile responsive design
 
-## About
+ Clean and user-friendly interface
 
-Health Coach is a web application designed to assist users with their health journey. It includes:
+How it works
 
-- A **fully functional chatbot** powered by **IBM Watson** that provides health and fitness advice.
-- A **diet plan** section offering personalized meal plans.
-- An **exercise program** section to help users stay fit with recommended workout routines.
-- A **nutrition** section providing educational content about healthy eating.
+Frontend (this repository): Built using HTML, CSS, and JavaScript to create an interactive platform that helps users access fitness and nutrition resources.
 
----
+Backend (optional integration): Can be extended to connect with APIs or databases to store user preferences and provide tailored recommendations.
 
-## Features
+Pre-requisites
 
-- [x] **Chatbot** powered by **IBM Watson** for health and fitness guidance
-- [x] **Diet Plan** tailored to individual needs
-- [x] **Exercise Program** section with workout routines
-- [x] **Nutrition** section providing tips on healthy eating
-- [x] Mobile responsive design
-- [x] Interactive and user-friendly interface
+Before you begin, ensure you have the following installed:
 
----
+Git
 
-## How it works
+A modern web browser
 
-1. **Frontend** (this repository): Built using React and integrated with IBM Watson API for the chatbot functionality.
-2. **Backend** (external or API service): Integrates third-party APIs for real-time health data and IBM Watson for chatbot functionality.
-
-### Pre-requisites
-
-Before you begin, make sure you have the following tools installed on your machine:
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/)
-- [VSCode](https://code.visualstudio.com/) (or any code editor)
-
-#### Running the web application (Frontend)
-
-```bash
+Running the application locally
 # Clone this repository
-$ git clone git@github.com:Mominuddin07/Health-Coach.git
+$ git clone https://github.com/Mateenjr7/Fitness-Coach.git
 
-# Navigate to the project folder
-$ cd Health-Coach
+# Navigate into the project directory
+$ cd Fitness-Coach
 
-# Install dependencies
-$ npm install
+# Open index.html in your browser to run the application
 
-# Start the application
-$ npm start
+Tech Stack
 
-# The application will run on http://localhost:3000
+The project is built using:
 
----
-```
+Frontend
 
-## Tech Stack
+HTML → Structure of the website
 
-The following tools were used in the construction of the project:
+CSS → Styling and responsive layout
 
-#### **Platform**
-- **HTML** for the basic structure of the website
-- **CSS** for styling and responsive design
-- **JavaScript** for the interactive elements and chatbot functionality
+JavaScript → Interactive elements and functionalities
 
-#### **External Services**
-- **IBM Cloud** → Provides the chatbot functionality powered by **IBM Watson**
+Hosting
 
-#### **Tools Used**
-- **[IBM Watson](https://www.ibm.com/cloud/watson-assistant/)** → Used for building the chatbot that provides health and fitness guidance.
-- **[Visual Studio Code](https://code.visualstudio.com/)** → The code editor used to write and edit the project files.
-- **[Google Fonts](https://fonts.google.com/)** → Used for fonts, enhancing the website's typography.
-- **[Font Awesome](https://fontawesome.com/)** → Used for icons throughout the website.
+Netlify → For deploying the website online
 
----
+Author
+<a href="https://github.com/Mateenjr7"> <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/your-avatar-id" width="70px;" alt="Mateenjr7"/> <br /> <p><b>Mateenjr7</b></p></a>
 
-## Author
+License
 
-<a href="https://www.linkedin.com/in/mohammed-mominuddin-350180259/">
- <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFY3bB4gWUEVw/profile-displayphoto-shrink_200_200/0/1638286563108?e=1651708800&v=beta&t=WQhkU4GF5vPmHiAb788WkvXJaXnyKhYz5oarqqcfGBA" width="70px;" alt="Mohammed Mominuddin"/>
- <br />
- <p><b>Mohammed Mominuddin</b></p></a>
- 
-[![Linkedin Badge](https://img.shields.io/badge/-Mohammed%20Mominuddin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mohammed-mominuddin-350180259/)](https://www.linkedin.com/in/mohammed-mominuddin-350180259/)
+This project is licensed under the MIT License
+.
 
----
+Made with ❤️ by Mateenjr7.
 
-## License
+Learn More
 
-This project is licensed under the [MIT License](./LICENSE).
+This project was built using core web technologies. Explore more at:
 
-Made with love by Mohammed Mominuddin 👋🏽 [Get in Touch!](https://www.linkedin.com/in/mohammed-mominuddin-350180259/)
+HTML
 
----
+CSS
 
-## Learn More
-
-This project was created using pure HTML, CSS, and JavaScript.
-
-For more information on IBM Watson and how to integrate AI-powered chatbots, visit the [IBM Watson Assistant Documentation](https://www.ibm.com/cloud/watson-assistant/).
-
-You can also explore more about the technologies used in this project:
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+JavaScript
